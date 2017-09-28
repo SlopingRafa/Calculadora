@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="btSoma">Somar</string>
+    <string name="resultado">Resultado</string>
+</resources>

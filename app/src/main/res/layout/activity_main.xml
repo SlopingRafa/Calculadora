@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.secomp.calculadora.MainActivity">
+
+    <EditText
+        android:id="@+id/edText1"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Numero 1"
+        android:inputType="textPersonName|numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/edtext2"
+        android:layout_width="360dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.01"
+        android:ems="10"
+        android:hint="Numero 2"
+        android:inputType="textPersonName|numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edText1"
+        app:layout_constraintVertical_bias="0.005"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btSoma"
+        android:layout_width="316dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btSoma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtext2"
+        app:layout_constraintVertical_bias="0.109"
+        tools:layout_editor_absoluteX="34dp" />
+
+</LinearLayout>
